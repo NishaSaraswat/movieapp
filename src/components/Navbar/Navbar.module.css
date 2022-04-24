@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#474747; 
+    border-radius: 10px;
+    margin: 20px;
+    color: #FFFFFF;
+}
+.inputBox{
+    color: #777;
+    display:flex;
+    align-items: center;
+    padding:2px;
+}
+.inputBox >input{
+    flex:1;
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color:#474747;
+    font-size: medium;
+    margin-left: 10px;
+    color: #FFFFFF;
+    
+}
