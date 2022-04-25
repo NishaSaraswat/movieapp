@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import TrendingMovies from './components/TrendingMovies/TrendingMovies';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Header/>
       </div>
       <div>
-        Body
+        <TrendingMovies/>
       </div>
       <div>
         <Footer/>
