@@ -1,0 +1,21 @@
+.container{
+    background-color:#304042;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.pageTitle{
+    font-weight: 500;
+    font-size: large;
+}
+.right{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.search{
+    position: absolute;
+    margin-left: 70px;
+}

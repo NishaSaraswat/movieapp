@@ -1,11 +1,19 @@
 import React from 'react'
+import styles from '../Header/Header.module.css'
+import {FaSistrix,FaBars} from 'react-icons/fa'
+
 
  const Header = () => {
   return (
-      <div style={{backgroundColor:'#385154',height:59}}>
-        <div>Movies</div>
-        <div>Searchicon</div>
-        <div>burgermenu</div>
+      <div className={styles.container}>
+        <div className={styles.pageTitle}>Movies</div>
+
+        <div className={styles.right}>
+            <div className={styles.search}>
+            <FaSistrix style={{fontSize:25}}/>
+            </div>
+        </div>
+        <div><FaBars  style={{fontSize:25}}/></div>
     </div>
   )
 }

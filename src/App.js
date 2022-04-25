@@ -13,6 +13,9 @@ function App() {
         <Header/>
       </div>
       <div>
+        Body
+      </div>
+      <div>
         <Footer/>
       </div>
       </>

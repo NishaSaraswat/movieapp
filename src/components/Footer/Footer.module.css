@@ -1,0 +1,41 @@
+.container{
+    height: 113px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    background: #304042;
+    display: flex;
+    flex-wrap: wrap;
+    top: 730px;
+}
+.tmdbContainer{
+    margin-left:30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+    letter-spacing: .2rem;
+    margin-top:10px;
+    background: linear-gradient(90deg, #7CB896 -12.02%, #0AB3E4 137.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.logoContainer{
+    width: 38px;
+    height: 9px;
+    background: linear-gradient(90deg, #7CB896 0%, #0AB3E4 100%);
+    border-radius: 13px;
+    margin: 18px;
+}
+.info{
+width: 310px;
+height: 62px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 200;
+font-size: medium;
+color: #FFFFFF;
+margin-left: 30px;
+}
