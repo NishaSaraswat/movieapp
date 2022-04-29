@@ -1,5 +1,5 @@
 .container{
-    height: 113px;
+    height: 110px;
     left: 0px;
     width: 100%;
     background: #304042;
@@ -38,4 +38,7 @@ font-weight: 200;
 font-size: medium;
 color: #FFFFFF;
 margin-left: 30px;
+margin-top: 10px;
+letter-spacing: 1px;
+
 }
