@@ -15,7 +15,7 @@ const Title = styled.div({
     const InnerContainer = styled.div({
         display:'flex',
         flexWrap: 'wrap',
-        gap: 5,
+        gap: 12,
         justifyContent: 'space-evenly',
         alignItems: 'center'
     })

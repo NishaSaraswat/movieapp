@@ -16,8 +16,8 @@ export const MoreMovies = ({setTotalItems}) => {
     }
   return (
     <div>{
-        arrowUp?<FaAngleDown style={{fontSize:30,position:'relative',marginLeft:50,marginRight:40}}
-        onClick={showMoreMovies}/>: <FaAngleUp  style={{fontSize:30,position:'relative',marginLeft:50,marginRight:40}}
+        arrowUp?<FaAngleDown style={{fontSize:20,position:'relative',marginLeft:50,marginRight:40}}
+        onClick={showMoreMovies}/>: <FaAngleUp  style={{fontSize:20,position:'relative',marginLeft:50,marginRight:40}}
         onClick={hideMovies}/>
     }</div>
   )
