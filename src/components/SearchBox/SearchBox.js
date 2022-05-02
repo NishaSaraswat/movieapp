@@ -13,25 +13,37 @@ export const SearchBox = (props) => {
     const fetchSearchedMovies = async()=>{
         const response = await fetch(`${apiDomain}/search/movie?api_key=${apiKey}&query=${props.movieName}`)
         const resJson = await response.json()
-    
         setSearchMovies(resJson.results)
         }
+
    useEffect(() => {
-  
+   
     fetchSearchedMovies()
      
    }, [props.movieName])
 
   return (
     <>
-        <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap',gap:19,justifyContent:'center',marginBottom:20}}>
-            {props.movieName ===' '?<DisplayMovies/>:
-                searchMovie.map((item)=>(
+        <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap',gap:20,justifyContent:'center',marginBottom:10}}>
+            {
+            searchMovie.length === 0?
+            <div style={{height:'74vh'}}>
+                <p style={{marginTop:200,fontSize:'24px'}}>
+                    No such movie found!    </p>
+                    <img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/313/film-projector_1f4fd-fe0f.png' alt='movie'/>
+            </div>:
+            props.movieName ===' '?<DisplayMovies/>:
+                searchMovie.map((item,index)=>(
+                    <div style={{height:'74vh'}}>
                     <MovieCard
                     movie= {item}
-                    title={item.title}
-                    key={item.id}
+                    key={item.id+index+''}
                     />
+                    <div style={{paddingTop:15,paddingBottom:5,textAlign:'center',backgroundColor:'ActiveBorder',color:'black',borderRadius:10}}>
+                        IMDB 
+                        {' '+item.vote_average} 
+                        </div>           
+                </div>
                 ))
             }
     </div>

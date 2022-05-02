@@ -8,12 +8,14 @@ import styles from '../src/components/Navbar/Navbar.module.css'
 
 function App() {
   const [movieName,setMovieName] = useState(' ')
+  
 
   const handleChange = (e)=>{
     const data =  e.target.value
     setMovieName(data)
     }
     
+  
  
   return (
       <>

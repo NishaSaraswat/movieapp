@@ -42,9 +42,9 @@ export const getAMovie = async(id)=>{
         return false;
     }
 }
-export const getsearchMovie = async(query)=>{
+export const getsearchMovie = async()=>{
     try {
-        const responce = await fetch(`${apiDomain}/search/movie?api_key=${apiKey}&query=${query}`)
+        const responce = await fetch(`${apiDomain}/search/movie?api_key=${apiKey}&query=`)
         const data = await responce.json()
         return data
     } catch (error) {

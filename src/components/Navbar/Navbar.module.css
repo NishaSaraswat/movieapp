@@ -23,6 +23,8 @@
     background-color:#474747;
     font-size: medium;
     margin-left: 10px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF; 
+}
+.form{
+    outline: none;
 }

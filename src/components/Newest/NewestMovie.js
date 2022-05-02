@@ -10,7 +10,6 @@ const NewestMovies = () => {
 
     const fetchNewestMovies=()=>{
         getNewestMovies().then((res)=>{
-            console.log(res)
             if(!res) return;
             setNewestMovies(res.results)
         })

@@ -10,6 +10,7 @@ const Title = styled.div({
     marginTop:10
     });
    const MainContainer = styled.div({
+        height:'24vh',
         borderBottom: '2px solid #AD7D62'
     })
     const InnerContainer = styled.div({
